@@ -99,6 +99,7 @@ someElement2.addEventListener('blur', (event) => {
 interface UserInterface3 {
   getFullName(): string;
 }
+
 // Class
 class User implements UserInterface3 {
   firstName: string
@@ -182,7 +183,7 @@ const john: UserInterface4<string[]> = {
 // const result = addId<UserInterface4>(user2);
 // console.log("result", result);
 
-//Enum
+// Enum
 const statuses = {
   notStarted: 0,
   inProgress: 1,
@@ -191,7 +192,7 @@ const statuses = {
 
 console.log(statuses.inProgress);
 
-// The values are incremented from zero
+// Enum's values are incremented from zero
 enum StatusEnum {
   NotStarted = "not started",
   InProgress = "inProgress",
